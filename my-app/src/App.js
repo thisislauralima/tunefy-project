@@ -1,7 +1,12 @@
+import React from 'react';
+import { Switch, Route } from 'react-router-dom';
+import pages from './pages';
 
 function App() {
   return (
-    <div>oi</div>
+    <Switch>
+      <Route exact path="/" component={ pages.Login } />
+    </Switch>
   );
 }
 
