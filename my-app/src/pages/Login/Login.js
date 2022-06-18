@@ -20,6 +20,7 @@ export default function Login() {
   }, [setButton, email, password]);
 
   const switchToSearch = () => {
+    localStorage.seItem('userEmail', email);
     history.push('/search');
   }
 
