@@ -1,7 +1,13 @@
 import React from 'react';
+import Header from '../../components/Header/Header';
+import SearchArtist from '../../components/SearchArtist/SearchArtist';
 
 export default function Search() {
   return (
-    <div>Search</div>
+    <>
+      <Header />
+      <SearchArtist />
+      <div>PESQUISA</div>
+    </>
   );
 }
