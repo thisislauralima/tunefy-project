@@ -3,11 +3,17 @@ import PropTypes from 'prop-types';
 import tunesContext from './tunesContext';
 
 function TunesProvider({ children }) {
-  const [searchedArtist, setSearchedArtist] = useState('');
-  
+  const [albumsResult, setAlbumsResult] = useState(false);
+  const [search, setSearch] = useState([]);
+  const [displaySearch, setDisplaySearch] = useState(false);
+
   const values = {
-    searchedArtist,
-    setSearchedArtist,
+    albumsResult,
+    setAlbumsResult,
+    search,
+    setSearch,
+    displaySearch,
+    setDisplaySearch,
   }
   return (
     <tunesContext.Provider value={ values }>
