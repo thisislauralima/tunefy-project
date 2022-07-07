@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Molengo&display=swap');
+
+body {
+  background-color: rgb(25,25,25);
+  color: white;
+  font-size: 1em;
+  font-family: 'Molengo', cursive;
+}
+
+h1 {
+  text-align: center;
+  margin-left: 10px;
+}
+
+header {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  width: 80px;
+}
+
+input {
+  font-family: 'Molengo', cursive;
+  font-size: 15px;
+  font-weight: 400;
+  color: white;
+  background-color: rgb(25,25,25);
+  padding: 3%;
+  width: 100%;
+  border: 1px solid rgb(53, 51, 51);
+  border-radius: 10px;
+}
+
+form {
+  margin: auto;
+  width: 40%;
+}
+
+#emailInput {
+  margin-top: 150px;
+}
+
+button {
+  background-color: rgb(112,216,100);
+  border-radius: 20px;
+  margin-top: 15px;
+  width: 100px;
+  padding: 10px;
+  color: black;
+  border: none;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+button:hover {
+  padding: 12px;
+  width: 106px;
+  background-color: rgb(111, 201, 101);
+}
+
+label {
+  font-weight: 400;
+}
+
+input {
+  margin-top: 10px;
+}
+
+#passwordInput {
+  margin-top: 10px;
+}
+
+#line {
+  margin-top: 20px;
+  background-color: rgb(43, 41, 41);
+  height: 1px;
+  width: 100%;
+  color: rgb(25,25,25);
+}
