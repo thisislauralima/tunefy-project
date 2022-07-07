@@ -1,0 +1,42 @@
+#album {
+  min-width: 200px;
+  max-width: 200px;
+  max-height: 290px;
+  min-height: 290px;
+  padding-bottom: 10%;
+  background-color: rgb(23,23,23);
+  display: flex;
+  flex-direction: column;
+  color: white;
+  margin: 10px;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+#album img {
+  box-sizing: border-box;
+  width: 150px;
+  margin: 19px auto 20px;
+  border-radius: 10px;
+}
+
+#artist {
+  font-weight: 800;
+  color: rgb(239,239,239);
+}
+
+.alignText {
+  text-align: center;
+}
+
+body {
+  background-color: rgb(0,0,0);
+}
+
+#albumName {
+  color: rgb(144,144,144);
+}
+
+#albumText {
+  margin: auto;
+}
