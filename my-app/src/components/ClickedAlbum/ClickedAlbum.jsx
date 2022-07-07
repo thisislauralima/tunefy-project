@@ -1,23 +1,34 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import getMusicById from '../../services/getMusicById';
+import SongCard from '../SongCard/SongCard';
 
 export default function ClickedAlbum () {
-  const [song, setSong] = useState([]);
+  const [songs, setSongs] = useState([]);
   const { id } = useParams();
 
   useEffect(() => {
     const fetchData = async () => {
       const music = await getMusicById(id);
-      console.log('song', music)
-      setSong(music);
+      setSongs(music.splice(1));
     }
     fetchData();
-  }, []);
+  }, [setSongs, id]);
 
   return (
-    // song.map((el) => {
-    <div>oi</div>
-    // })
+    <main>
+      <img src={ localStorage.getItem('albumImage') } alt="album" />
+      {
+        songs.map((el) => (
+          <div key={el.trackId}>
+            <SongCard
+              trackId={ el.trackId }
+              previewUrl={ el.previewUrl }
+              trackName={ el.trackName }
+            />
+          </div>
+        ))
+      }
+    </main>
   )
 }
