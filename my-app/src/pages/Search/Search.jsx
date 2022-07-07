@@ -16,14 +16,15 @@ export default function Search() {
           <main>
             {
               search.length ? search.map((el) => (
-                  <Link to={ `/album/${ el.collectionId }` } { ...el }>
+                <div key={ el.collectionId }>
+                  <Link to={ `/album/${ el.collectionId }` }>
                     <AlbumCard
-                      key={ el.artistId }
                       info={ el }
                       // image={ artworkUrl100 }
                       // albumName={ collectionName }
                     />
                   </Link>
+                </div>
               )) : <p>Nenhum álbum foi encontrado</p>
             }
           </main>
